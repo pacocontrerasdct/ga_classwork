@@ -55,9 +55,6 @@ main, nav, aside, footer {
   display: inline-block;
   padding: 20px 0;
 }
-header {
-
-}
 nav {
   width: 100%;
 }
@@ -79,13 +76,7 @@ li a{
 }
 main {
   width: 65%;
-
 }
-/*
-article {
-  width: 100%;
-}
-*/
 time {
   font-size: 25px;
   font-weight: 100;
@@ -127,7 +118,6 @@ header h1 a {
 aside section ul{
     list-style-type: disc;
     list-style-position: inside;
-
 }
 aside section li a{
     font-size: 14px;
