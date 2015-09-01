@@ -39,5 +39,20 @@ describe DockingStation do
     expect { station.dock(bike) }.to raise_error 'Station is full'
   end
 
+  it 'should provide a list of available bikes' do
+    working_bike, broken_bike = Bike.new, Bike.new
+    # SAME: 
+          #working_bike = Bike.new
+          #broken_bike = Bike.new
+
+    broken_bike.break
+    station.dock(working_bike)
+    station.dock(broken_bike)
+    
+    puts station.available_bikes.inspect
+
+    expect(station.available_bikes).to eq [working_bike]
+  end
+
 
 end
